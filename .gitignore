@@ -1,0 +1,20 @@
+# 依賴項目
+node_modules/
+__pycache__/
+*.pyc
+
+# 編輯器
+*.swp
+*.swo
+*~
+
+# 系統
+.DS_Store
+Thumbs.db
+
+# 日誌
+*.log
+
+# 暫存
+*.tmp
+*.temp
