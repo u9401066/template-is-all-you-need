@@ -2,7 +2,7 @@
 
 > 🏗️ AI 輔助開發專案模板 - 整合 Claude Skills、Memory Bank 與憲法-子法架構
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## ✨ 特色
 
@@ -99,7 +99,9 @@ code .
 - [變更日誌](CHANGELOG.md) - 版本歷史
 - [路線圖](ROADMAP.md) - 功能規劃
 - [貢獻指南](CONTRIBUTING.md) - 如何貢獻
+- [CLAUDE.md](CLAUDE.md) - Claude Code 專用指引
+- [AGENTS.md](AGENTS.md) - VS Code Copilot Agent 指引
 
 ## 📄 授權
 
-[MIT License](LICENSE)
+[Apache License 2.0](LICENSE)
