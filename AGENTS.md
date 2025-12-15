@@ -21,6 +21,24 @@
 
 詳見：`.github/bylaws/ddd-architecture.md`
 
+### Python 環境規則
+
+- **優先使用 uv** 管理套件和虛擬環境
+- 新專案必須建立 `pyproject.toml` + `uv.lock`
+- 禁止全域安裝套件
+
+```bash
+# 初始化環境
+uv venv
+uv sync --all-extras
+
+# 安裝依賴
+uv add package-name
+uv add --dev pytest ruff
+```
+
+詳見：`.github/bylaws/python-environment.md`
+
 ### Memory Bank 同步
 
 每次重要操作必須更新 Memory Bank：

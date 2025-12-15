@@ -28,19 +28,38 @@ CONSTITUTION.md          ← 最高原則（不可違反）
 
 ## 核心原則
 
+### 0. 開發哲學 💡
+> **「想要寫文件的時候，就更新 Memory Bank 吧！」**
+> 
+> **「想要零散測試的時候，就寫測試檔案進 tests/ 資料夾吧！」**
+
+- 不要另開檔案寫筆記，直接寫進 Memory Bank
+- 今天的零散測試，就是明天的回歸測試
+
 ### 1. DDD 架構
 - Domain Layer 不依賴外部
 - DAL (Data Access Layer) 必須獨立
 - 使用 Repository Pattern
 - 參見：`.github/bylaws/ddd-architecture.md`
 
-### 2. Memory Bank 同步
+### 2. Python 環境（uv 優先）
+```bash
+# 初始化
+uv venv && uv sync --all-extras
+
+# 安裝依賴
+uv add package-name
+uv add --dev pytest ruff mypy
+```
+- 參見：`.github/bylaws/python-environment.md`
+
+### 3. Memory Bank 同步
 每次重要操作必須更新：
 - `memory-bank/progress.md` - 進度追蹤
 - `memory-bank/activeContext.md` - 當前焦點
 - `memory-bank/decisionLog.md` - 重要決策
 
-### 3. Git 工作流
+### 4. Git 工作流
 提交前執行檢查清單：
 1. Memory Bank 同步
 2. README 更新（如需要）

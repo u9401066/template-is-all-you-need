@@ -1,5 +1,10 @@
 # Copilot 自定義指令
 
+## 開發哲學 💡
+> **「想要寫文件的時候，就更新 Memory Bank 吧！」**
+> 
+> **「想要零散測試的時候，就寫測試檔案進 tests/ 資料夾吧！」**
+
 ## 法規遵循
 你必須遵守以下法規層級：
 1. **憲法**：`CONSTITUTION.md` - 最高原則
@@ -10,6 +15,11 @@
 - 採用 DDD (Domain-Driven Design)
 - DAL (Data Access Layer) 必須獨立
 - 參見子法：`.github/bylaws/ddd-architecture.md`
+
+## Python 環境（uv 優先）
+- 新專案必須使用 uv 管理套件
+- 必須建立虛擬環境（禁止全域安裝）
+- 參見子法：`.github/bylaws/python-environment.md`
 
 ## Memory Bank 同步
 每次重要操作必須更新 Memory Bank：
